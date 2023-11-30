@@ -23,7 +23,7 @@ describe("App component", () => {
         <App />
       </MemoryRouter>
     );
-
+    screen.debug();
     const countryDetailsPageText = screen.getByText(/Country Details/i);
     expect(countryDetailsPageText).toBeInTheDocument();
   });
